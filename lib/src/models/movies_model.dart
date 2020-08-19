@@ -72,4 +72,12 @@ class Movie {
       return 'https://image.tmdb.org/t/p/w500/$posterPath';
     }
   }
+
+  getBackgroundImg() {
+    if (backdropPath == null) {
+      return 'https://i1.wp.com/autohub.de/wp-content/uploads/2019/08/placeholder.png?fit=1200%2C800&ssl=1';
+    } else {
+      return 'https://image.tmdb.org/t/p/w500/$backdropPath';
+    }
+  }
 }
